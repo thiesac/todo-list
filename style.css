@@ -45,7 +45,7 @@ button:hover{
     cursor: pointer;
 }
 
-#show-user {  
+.show-user {  
     border-radius: 7px;
     display: flex;
     justify-content: space-between;

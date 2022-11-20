@@ -35,7 +35,7 @@ function atualizarTela() {
   mostrar.innerHTML = "";
   for (let i = 0; i < lista.length; i++) {
     mostrar.innerHTML += `
-      <div id="show-user">  
+      <div class="show-user">  
         <div><span><input type="checkbox" onchange=concluirTarefa(${i})>${lista[i].desc}</span></div>
         <div><img src="img/edit-24.png" onclick=prepararTela(${i})><img src="img/trash-24.png" onclick=excluir(${i})></div>
       </div>
@@ -50,7 +50,6 @@ function excluir(i) {
 
 function prepararTela(i) {
   document.getElementById("tarefa").value = lista[i].desc;
-  document.getElementById("show-user")[i].style.backgroundColor = "red";
   indiceSelecionado = i;
 }
 
